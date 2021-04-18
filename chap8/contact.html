@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Panacloud Contact</title>
+  <style type="text/css">
+   div.header 
+  {
+      background-color: rgb(81, 216, 39);
+      margin-left: 50px;
+      margin-right: 50px;
+      border-radius: 10px;
+      padding: 20px 10px;
+      overflow: hidden;
+  }
+  div.header a 
+  {
+      float:initial;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 20px;
+      border-radius: 4px;
+  }
+  div.header a:hover
+  {
+      background-color: rgb(13, 173, 27);
+      color: black;
+  }
+  div.header a.active 
+  {
+    background-color: rgb(9, 82, 15);
+      color: black;
+  }
+  @media screen and (max-width: 730px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+div.form 
+{
+  margin-left: 58px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+}
+div.map 
+{
+  margin-left: 58px;
+  margin-right: 52px;
+  padding-bottom: 50px;
+}
+div.footer 
+{
+    position: fixed;
+    bottom: 0;
+    width: 91%;
+    background-color: rgb(81, 216, 39);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 54px;
+}
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/panacloud.png" alt="panacloud logo" title="Panacloud Logo" />
+      <a href="home.html" class="home">  HOME  </a>
+      <a href="about.html" class="about">  ABOUT  </a>
+      <a href="portfolio.html" class="portfolio">  PORTFOLIO  </a>
+      <a href="contact.html" class="active">  CONTACT  </a>
+    </div>
+    <div class="form">
+      <form action="https://www.google.com" method="GET">
+        <fieldset>
+          <legend>Your Details</legend>
+          <p>
+          <label>
+              Name:
+          <input type="text" name="name" size="30" maxlength="100" />
+          </label>
+          </p>
+          <p>
+          <label>
+              Email:
+          <input type="email" name="email" size="30" maxlength="100" />
+          </label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Your Review</legend>
+          <br>
+          <label>How did you hear about us?</label>
+          <select name="Social Media">
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Youtube">Youtube</option>
+          </select>
+          <br>
+          <p>Would you visit again?
+          <br>
+          <input type="radio" name="option" value="Yes" />Yes
+          <input type="radio" name="option" value="No" />No
+          <input type="radio" name="option" value="Maybe" />Maybe
+          </p>
+          <p>Comments:
+          <br>
+          <textarea name="comments" cols="30" rows="5"></textarea>
+          </p>
+          <input type="checkbox" />Sign me up for email updates
+          <br>
+          <input type="submit" value="Submit Review" />
+        </fieldset>
+      </form>
+    </div>
+    <div class="map">
+      <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=panacloud%20karachi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Plan A Journey</a>
+    </div>
+    <div class="footer">
+      <p class="footer">Copyright © 2021. All rights reserved.</p>
+    </div>
+  </body>
+</html>

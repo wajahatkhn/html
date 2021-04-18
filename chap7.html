@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chapter 7 Assignment</title>
+  <style type="text/css">
+   
+  </style>
+  </head>
+  <body>
+    <h1>Chapter # 7 - Forms</h1>
+    <form action="https://www.google.com" method="GET">
+      <fieldset>
+        <legend>Your Details</legend>
+        <p>
+        <label>
+            Name:
+        <input type="text" name="name" size="30" maxlength="100" />
+        </label>
+        </p>
+        <p>
+        <label>
+            Email:
+        <input type="email" name="email" size="30" maxlength="100" />
+        </label>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Your Review</legend>
+        <br>
+        <label>How did you hear about us?</label>
+        <select name="Social Media">
+          <option value="Google">Google</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Youtube">Youtube</option>
+        </select>
+        <br>
+        <p>Would you visit again?
+        <br>
+        <input type="radio" name="option" value="Yes" />Yes
+        <input type="radio" name="option" value="No" />No
+        <input type="radio" name="option" value="Maybe" />Maybe
+        </p>
+        <p>Comments:
+        <br>
+        <textarea name="comments" cols="30" rows="5"></textarea>
+        </p>
+        <input type="checkbox" />Sign me up for email updates
+        <br>
+        <input type="submit" value="Submit Review" />
+      </fieldset>
+    </form>
+  </body>
+</html>

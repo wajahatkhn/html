@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<style>
+        body {
+            background: url("pictures/transparent1.png") no-repeat center center fixed; 
+           -webkit-background-size: cover;
+            -moz-background-size: cover;
+           -o-background-size: cover;
+            background-size: cover;
+        } 
+        
+        </style>
+</head>
+<body>
+<form action="https://www.google.com">
+<p>What are your suggestions?</p>
+<textarea name="comments" cols="20" row="4">Enter your comments</textarea>
+<br />
+<p>What is your favourite movie genre?
+<br />
+<input type="radio" name="genre" value="Action" />Action
+<input type="radio" name="genre" value="Comedy" />Comedy
+<input type="radio" name="genre" value="Sci-Fi" checked="checked" />Sci-Fi
+</p>
+<p>What device do you use most on daily basis?</p>
+<select name="devices">
+<option value="Mobile Phone">Mobile Phone</option>
+<option value="Computer">Computer</option>
+<option value="Typewriter">Typewriter</option>
+</select>
+<br />
+<p>Do you like any of the following music genre?(You can select more than one options by holding the CTRL key.)</p>
+<select name="Music Genre" size="3" multiple="multiple">
+<option value="Hip-Hop">HipHop</option>
+<option value="Rap">Rap</option>
+<option value="Pop">Pop</option>
+</select>
+<br />
+<p>Upload whatever you want!</p>
+<input type="file" name="Anything" />
+<input type="Submit" value="Upload" />
+<br />
+<p><label>Age:<input type="text" name="age" /></label></p>
+Gender:<input id="female" type="radio" name="gender" value="f" />
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m" />
+<label for="male">Male</label>
+<br />
+<fieldset>
+<legend>LOGIN</legend>
+<label> Username:
+<input type="text" name="username" required="required" />
+</label>
+<br />
+<label> Password:
+<input type="password" name="password" required="required" />
+</label>
+<input type="Submit" value="Submit" />
+</fieldset>
+<br />
+<input type="date" required /><br />
+<input type="url" required placeholder="Enter url" /><br />
+<input type="email" required placeholder="Enter email" /><br />
+<input type="search" required placeholder="Enter keyword" /><br />
+<input type="submit" />
+</form>
+</body>
+</html>
